@@ -41,6 +41,7 @@ public class GooglePageStep {
 
 	@Then("Click the Search button")
 	public void click_the_Search_button() {
+		driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div[1]/div[3]/center/input[1]")).click();
 
 	}
 
