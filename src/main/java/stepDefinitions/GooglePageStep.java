@@ -2,6 +2,8 @@ package stepDefinitions;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -31,6 +33,9 @@ public class GooglePageStep {
 
 	@Then("Enter value into the search field")
 	public void enter_value_into_the_search_field() {
+		
+		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Veant");
+		driver.findElement(By.xpath("//input[@name='q']")).sendKeys(Keys.TAB);
 
 	}
 
