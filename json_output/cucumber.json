@@ -1,0 +1,71 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Google page testing",
+        "description": "",
+        "id": "google-page-test;google-page-testing",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1077300,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Open the Google page",
+            "match": {
+              "location": "GooglePageStep.open_the_Google_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 17400,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "Enter value into the search field",
+            "match": {
+              "location": "GooglePageStep.enter_value_into_the_search_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9100,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Click the Search button",
+            "match": {
+              "location": "GooglePageStep.click_the_Search_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Close the Google  page",
+            "match": {
+              "location": "GooglePageStep.close_the_Google_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Google Page Test",
+    "description": "",
+    "id": "google-page-test",
+    "keyword": "Feature",
+    "uri": "file:/C:/Users/PC%20User1/Desktop/SeleniumFiles/DevOpsTestBDD/src/main/java/Features/Google.feature",
+    "tags": []
+  }
+]
