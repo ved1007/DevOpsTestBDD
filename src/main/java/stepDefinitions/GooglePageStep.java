@@ -41,6 +41,8 @@ public class GooglePageStep {
 
 	@Then("Close the Google  page")
 	public void close_the_Google_page() {
+		
+		driver.quit();
 
 	}
 

@@ -17,7 +17,7 @@ formatter.match({
   "location": "GooglePageStep.open_the_Google_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Enter value into the search field",
@@ -27,7 +27,7 @@ formatter.match({
   "location": "GooglePageStep.enter_value_into_the_search_field()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click the Search button",
@@ -37,7 +37,7 @@ formatter.match({
   "location": "GooglePageStep.click_the_Search_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Close the Google  page",
@@ -47,6 +47,6 @@ formatter.match({
   "location": "GooglePageStep.close_the_Google_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 });
