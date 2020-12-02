@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features = "C:\\Users\\PC User1\\Desktop\\SeleniumFiles\\DevOpsTestBDD\\src\\main\\java\\Features\\Google.feature",
 
         glue = {"stepDefinitions" }, 
-        format = { "pretty", "html:test-outout", "json:json_output/cucumber.json",
+        plugin = { "pretty", "html:test-outout", "json:json_output/cucumber.json",
 				"junit:junit_xml/cucumber.xml" },
 		monochrome = true,
 		strict = true,
