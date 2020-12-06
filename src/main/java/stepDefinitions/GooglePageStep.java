@@ -2,6 +2,8 @@ package stepDefinitions;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -31,16 +33,22 @@ public class GooglePageStep {
 
 	@Then("Enter value into the search field")
 	public void enter_value_into_the_search_field() {
+		
+		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Veant");
+		driver.findElement(By.xpath("//input[@name='q']")).sendKeys(Keys.TAB);
 
 	}
 
 	@Then("Click the Search button")
 	public void click_the_Search_button() {
+		driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div[1]/div[3]/center/input[1]")).click();
 
 	}
 
 	@Then("Close the Google  page")
 	public void close_the_Google_page() {
+		
+		driver.quit();
 
 	}
 

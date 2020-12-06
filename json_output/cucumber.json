@@ -12,8 +12,8 @@
         "steps": [
           {
             "result": {
-              "duration": 1077300,
-              "status": "skipped"
+              "duration": 11635119300,
+              "status": "passed"
             },
             "line": 5,
             "name": "Open the Google page",
@@ -24,8 +24,8 @@
           },
           {
             "result": {
-              "duration": 17400,
-              "status": "skipped"
+              "duration": 757776400,
+              "status": "passed"
             },
             "line": 6,
             "name": "Enter value into the search field",
@@ -36,8 +36,8 @@
           },
           {
             "result": {
-              "duration": 9100,
-              "status": "skipped"
+              "duration": 1254961400,
+              "status": "passed"
             },
             "line": 7,
             "name": "Click the Search button",
@@ -48,8 +48,8 @@
           },
           {
             "result": {
-              "duration": 8000,
-              "status": "skipped"
+              "duration": 1271348000,
+              "status": "passed"
             },
             "line": 8,
             "name": "Close the Google  page",
