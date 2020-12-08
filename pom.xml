@@ -17,12 +17,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>DevOpsProject</groupId>
+	<packaging>war</packaging>
 	<artifactId>DevOpsTest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Axis2 Quickstart Sample</name>
 
 	<properties>
-	<spring.version>0.0.1.SNAPSHOT</spring.version>
+		<spring.version>0.0.1.RELEASE</spring.version>
 		<axis2.version>1.7.9</axis2.version>
 	</properties>
 
@@ -31,7 +32,7 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.11</version>
-			
+
 		</dependency>
 
 		<dependency>
@@ -107,10 +108,32 @@
 			</plugin>
 
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.9.1</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>3.0.0</version>
+			</plugin>
+
+
+			<plugin>
 				<groupId>org.apache.axis2</groupId>
 				<artifactId>simple-server-maven-plugin</artifactId>
 				<version>${axis2.version}</version>
 			</plugin>
+
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-war-plugin</artifactId>
+  <version>2.2</version>
+  <configuration>
+    <failOnMissingWebXml>false</failOnMissingWebXml>
+  </configuration>
+</plugin>
 
 			<plugin>
 				<groupId>org.apache.axis2</groupId>
